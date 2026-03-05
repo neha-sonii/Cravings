@@ -1,0 +1,37 @@
+[
+  {
+    "id": "cd976db0-749c-45ee-845b-fa3966592959",
+    "name": "Michael R.",
+    "rating": 5,
+    "text": "The Gut Shot burger is absolutely unreal. Hands down the best late-night food I have ever had. Massive portions and the meat actually tastes fresh.",
+    "createdAt": "2026-02-19T08:00:00.000Z"
+  },
+  {
+    "id": "f02655f0-fbd1-4bc3-bc27-1ec9bc42a1f7",
+    "name": "Sarah T.",
+    "rating": 5,
+    "text": "Ordered the Jackpot Platter for a group after a night out. It was absurd in the best way possible. The dry ribs and mac and cheese bites were stars.",
+    "createdAt": "2026-02-05T08:00:00.000Z"
+  },
+  {
+    "id": "90853252-eb2f-4d22-a852-d13eac6f8be5",
+    "name": "David L.",
+    "rating": 4,
+    "text": "Saved my life at 3 AM. The poutine is incredible, real cheese curds and super rich gravy. Deducting one star only because I was too full to finish it.",
+    "createdAt": "2026-02-12T08:00:00.000Z"
+  },
+  {
+    "id": "dcf6283e-ec28-406b-8676-6aaa076b524f",
+    "name": "Emma W.",
+    "rating": 5,
+    "text": "The spicy chicken wrap hits different when you are craving something with a kick. Love that they are open till 4am on weekends.",
+    "createdAt": "2026-01-05T08:00:00.000Z"
+  },
+  {
+    "id": "1772722725168",
+    "name": "Neha Soni",
+    "text": "Super Delicious",
+    "rating": 5,
+    "createdAt": "2026-03-05T14:58:45.171Z"
+  }
+]

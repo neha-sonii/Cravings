@@ -1,0 +1,17 @@
+{
+  "name": "cravings",
+  "version": "1.0.0",
+  "description": "Cravings site with Express reviews API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

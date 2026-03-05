@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="This premium web application showcases a customizable cafe website, featuring an interactive menu for users to explore offerings and enhance their dining experience."
+    />
+    <title>Premium Cafe Website Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="top-nav">
+      <div class="container nav-inner">
+        <a class="brand" href="#">CRAVINGS <small>LATE NIGHT</small></a>
+        <div class="nav-links">
+          <a href="#about">Our Story</a>
+          <a href="#featured">Featured</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#find-us">Find Us</a>
+          <button class="menu-inline" type="button" data-open-menu>
+            Menu
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 7h16"></path>
+              <path d="M4 12h16"></path>
+              <path d="M4 17h16"></path>
+            </svg>
+          </button>
+        </div>
+        <button class="mobile-menu" type="button" data-open-menu aria-label="Open menu">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 7h16"></path>
+            <path d="M4 12h16"></path>
+            <path d="M4 17h16"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="container mobile-nav-links" aria-label="Mobile navigation">
+        <a href="#about">Our Story</a>
+        <a href="#featured">Featured</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#find-us">Find Us</a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <img
+          class="hero-image"
+          src="assets/images/hero-image.jpg"
+          alt="Premium Dark Restaurant Interior"
+        />
+        <div class="hero-layer"></div>
+        <div class="container hero-content">
+          <div class="hero-pane">
+            <div class="kicker">Late Night Excellence</div>
+            <h1>Good Food<br /><em>After Dark</em></h1>
+            <p>
+              Where your midnight cravings meet gourmet craftsmanship. Experience our fresh patties,
+              wings, and hearty platters.
+            </p>
+            <div class="hero-tags">
+              <span>Open Till 4AM</span>
+              <span>Fresh 8oz Patties</span>
+              <span>Fast Pickup</span>
+            </div>
+            <div class="actions">
+              <button class="btn btn-primary" type="button" data-open-menu>View Menu</button>
+              <a class="btn btn-outline" href="#featured">Discover More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="featured" class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <div class="kicker">Late Night Signatures</div>
+              <h2>Hearty Cravings</h2>
+            </div>
+            <p>
+              From our fresh 8oz burger patties to our decadent sharing platters, we craft our menu
+              to satisfy your biggest late-night hunger.
+            </p>
+          </div>
+          <div class="carousel-shell">
+            <button
+              class="carousel-btn carousel-btn-left"
+              type="button"
+              data-carousel-prev="featuredTrack"
+              aria-label="Previous featured item"
+            >
+              &#10094;
+            </button>
+            <div id="featuredTrack" class="scroll-row featured-row"></div>
+            <button
+              class="carousel-btn carousel-btn-right"
+              type="button"
+              data-carousel-next="featuredTrack"
+              aria-label="Next featured item"
+            >
+              &#10095;
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews" class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <div class="kicker">Word of Mouth</div>
+              <h2>Guest Reviews</h2>
+            </div>
+            <button id="reviewToggle" class="btn btn-outline amber" type="button" aria-expanded="false">
+              Leave a Review
+            </button>
+          </div>
+
+          <div id="reviewWrap" class="review-form-wrap">
+            <div class="review-form">
+              <button id="reviewClose" type="button" class="review-close" aria-label="Close">x</button>
+              <h3>Share Your Experience</h3>
+              <form id="reviewForm" class="form-grid">
+                <label>
+                  <span>Name</span>
+                  <input type="text" name="name" placeholder="Your name" required />
+                </label>
+                <label>
+                  <span>Rating</span>
+                  <select name="rating">
+                    <option value="5">5 Stars - Excellent</option>
+                    <option value="4">4 Stars - Very Good</option>
+                    <option value="3">3 Stars - Good</option>
+                    <option value="2">2 Stars - Fair</option>
+                    <option value="1">1 Star - Poor</option>
+                  </select>
+                </label>
+                <label class="full">
+                  <span>Review</span>
+                  <textarea name="review" rows="4" placeholder="Tell us about your food..." required></textarea>
+                </label>
+                <button class="btn btn-primary" type="submit">Submit Review</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="carousel-shell">
+            <button
+              class="carousel-btn carousel-btn-left"
+              type="button"
+              data-carousel-prev="reviewsTrack"
+              aria-label="Previous review"
+            >
+              &#10094;
+            </button>
+            <div id="reviewsTrack" class="scroll-row reviews-row"></div>
+            <button
+              class="carousel-btn carousel-btn-right"
+              type="button"
+              data-carousel-next="reviewsTrack"
+              aria-label="Next review"
+            >
+              &#10095;
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container about-grid">
+          <div class="about-photo-wrap">
+            <img
+              src="assets/images/about.jpg"
+              alt="Our Chef and Owner"
+            />
+            <div class="about-frame"></div>
+          </div>
+          <div>
+            <div class="kicker">The Story</div>
+            <h2>Born from the<br /><em>Midnight Hunger</em></h2>
+            <div class="about-copy">
+              <p>
+                It started with a simple problem: where do you go when it's 2 AM and you don't just
+                want fast food, but a meal made with care, massive portions, and unapologetic
+                flavor? That's how Cravings Late Night Food was born.
+              </p>
+              <p>
+                Founded by our head chef, we believe that late-night dining shouldn't mean
+                compromising on quality. Every single one of our 8oz burger patties is formed fresh,
+                never frozen. Our pizza dough is hand-tossed daily, and our platters are stacked high
+                enough to feed a small army.
+              </p>
+            </div>
+            <div class="stats">
+              <div><strong>8oz</strong><span>Fresh Patties</span></div>
+              <div><strong>10+</strong><span>Wing Flavours</span></div>
+              <div><strong>4AM</strong><span>Weekends</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="find-us" class="section">
+        <div class="container">
+          <div class="kicker">Location</div>
+          <h2 class="find-title">Find Us</h2>
+          <div class="find-grid">
+            <div class="find-info">
+              <h3>Address & Contact</h3>
+              <p>
+                <strong>Cravings Late Night Food</strong><br />
+                123 Midnight Avenue, Downtown<br />
+                Cityville, ST 10001
+              </p>
+              <p><strong>Phone:</strong> (555) 123-4567</p>
+              <p><strong>Email:</strong> hungry@cravingslatenight.com</p>
+              <h3>Connect With Us</h3>
+              <p>@cravingslatenight</p>
+              <p>/cravingslate</p>
+            </div>
+            <div class="find-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2123.14362881918!2d-105.32619574541806!3d55.08319910303718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52552f8d819910d1%3A0x1831ba0b985b5ffc!2sCravings%20Late%20Night%20Food!5e1!3m2!1sen!2sin!4v1772723319333!5m2!1sen!2sin"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Restaurant Location Map"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand">CRAVINGS <small>LATE NIGHT FOOD</small></div>
+          <p>
+            Serving up hearty, gourmet late-night bites. From our fresh 8oz burgers to our legendary
+            wing platters, we're here to satisfy your biggest cravings.
+          </p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#find-us">Find Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Location</h4>
+          <p>123 Midnight Ave, Downtown, ST 10001</p>
+          <p>hello@cravingslatenight.com</p>
+          <p>(555) 123-4567</p>
+        </div>
+        <div>
+          <h4>Hours</h4>
+          <p>Mon - Thu: 4pm - 2am</p>
+          <p>Fri - Sat: 4pm - 4am</p>
+          <p>Sunday: 4pm - 12am</p>
+        </div>
+      </div>
+      <div class="container copyright">
+        &copy; <span id="year"></span> Cravings Late Night Food. All rights reserved.
+      </div>
+    </footer>
+
+    <div id="menuOverlay" class="menu-overlay" aria-hidden="true">
+      <div class="menu-backdrop" data-close-menu></div>
+      <aside class="menu-panel" role="dialog" aria-modal="true" aria-label="Cravings menu">
+        <header>
+          <div>
+            <h3>Cravings Menu</h3>
+            <p>Late Night Food</p>
+          </div>
+          <button data-close-menu type="button" aria-label="Close menu">x</button>
+        </header>
+        <div class="menu-main">
+          <div id="menuList" class="menu-list"></div>
+          <aside class="menu-side">
+            <img
+              src="assets/images/menu-side.jpg"
+              alt="Menu Feature"
+            />
+            <div>
+              <h4>Satiate Your Hunger</h4>
+              <p>
+                Gourmet ingredients, huge portions, and flavors designed to hit the spot, day or
+                late night.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </aside>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
